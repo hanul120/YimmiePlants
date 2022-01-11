@@ -476,7 +476,7 @@ textarea {
     grid-template-columns: repeat(4, 1fr);
     -ms-grid-rows: (400px)[1];
     grid-template-rows: repeat(1, 400px);
-        grid-template-areas: "f4 f2 f3 f1";
+        grid-template-areas: "f1 f2 f3 f4";
   }
 }
 #cart ul li {
@@ -528,7 +528,7 @@ textarea {
 @media (min-width: 992px) {
   #cart ul #dahlia {
     -ms-grid-row: 1;
-    -ms-grid-column: 4;
+    -ms-grid-column: 1;
   }
   #cart ul #zinnia {
     -ms-grid-row: 1;
@@ -540,6 +540,6 @@ textarea {
   }
   #cart ul #fiddle {
     -ms-grid-row: 1;
-    -ms-grid-column: 1;
+    -ms-grid-column: 4;
   }
 }
