@@ -1,0 +1,100 @@
+/* =============
+    shopping
+============= */
+
+#shopping{
+    h1{
+
+    }
+
+    p{
+
+    }
+
+    ul{
+
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(4, 400px);
+        gap: 32px;
+
+        @include md{
+            grid-template-columns: 50% 50%;
+            grid-template-rows: repeat(2, 400px);
+        }
+
+        @include lg{
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(1, 400px);
+
+            grid-template-areas: "f1 f2 f3 f4";
+        }
+
+        li{
+
+            border: 1px solid black;
+            
+            div{
+                height: 100%;
+                width: 100%;
+                background-size: cover;
+                background-position: center;
+
+                @include md{
+                    background-position: left bottom;
+                }
+            }
+
+            
+
+            h2{
+
+            }
+        }
+
+        #dahlia{
+
+            div{
+                background-image: url("../img/dahlia.jpg");
+            }
+            
+
+            @include lg{
+                grid-area: f1;
+            }
+        }
+
+        #zinnia{
+
+            div{
+                background-image: url("../img/zinnia.jpg");
+            }
+            
+            @include lg{
+                grid-area: f2;
+            }
+        }
+
+        #succulent{
+
+            div{
+                background-image: url("../img/succulent.jpg");
+            }
+            
+            @include lg{
+                grid-area: f3;
+            }
+        }
+
+        #fiddle{
+
+            div{
+                background-image: url("../img/fiddle-leaf.jpg");
+            }
+            
+            @include lg{
+                grid-area: f4;
+            }
+        }
+    }
+}
