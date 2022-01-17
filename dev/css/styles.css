@@ -419,6 +419,45 @@ textarea {
     Footer
 ============= */
 /* =============
+    Hero
+============= */
+#hero {
+  background-image: url("../img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  text-align: center;
+}
+#hero div {
+  height: 50vh;
+  border: 6px solid red;
+}
+#hero div h1 {
+  font-weight: 300;
+  font-size: 2.75rem;
+  color: #fff;
+}
+@media (min-width: 768px) {
+  #hero div h1 {
+    font-size: 3.75rem;
+  }
+}
+@media (min-width: 992px) {
+  #hero div h1 {
+    font-size: 5rem;
+  }
+}
+
+/* =============
+    shopping
+============= */
+/* =============
+    confirmation
+============= */
+/* =============
+    checkout
+============= */
+/* =============
     Cart
 ============= */
 #cart ul {
@@ -543,3 +582,10 @@ textarea {
     -ms-grid-column: 4;
   }
 }
+
+/* =============
+    account
+============= */
+/* =============
+    about
+============= */
