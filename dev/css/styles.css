@@ -480,7 +480,7 @@ textarea {
   }
 }
 #cart ul li {
-  border: 1px solid red;
+  border: 1px solid black;
 }
 #cart ul li div {
   height: 100%;
